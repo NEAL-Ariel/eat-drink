@@ -1,61 +1,126 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 📦 Projet Laravel - Eat&Drink
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**Groupe :**  
+- **TOKPO Neal**  
+- **Audrey**  
+- **Herman**
 
-## About Laravel
+## 📝 Répartition des Tâches
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- **TOKPO Neal**  
+  - Gestion de l'authentification (login, inscription)  
+  - Tableau de bord administrateur : approbation des entrepreneurs  
+  - Implémentation des rôles et autorisations
+  - CRUD des produits pour les entrepreneurs 
+  - Vitrine publique (liste des stands et produits) 
+   
+- **Audrey**  
+  - Interface utilisateur pour le tableau de bord des entrepreneurs  
+  - Formulaires et validation (ajout/modification de produit)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- **Herman**  
+   
+  - Fonctionnalité de panier et soumission de commandes  
+  - Page de détails des stands et des produits
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## 🍽️ Contexte du Projet
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+L'événement culinaire **Eat&Drink** rassemble de nombreux restaurateurs et artisans. Afin de digitaliser son organisation, une plateforme web a été développée pour gérer les inscriptions des exposants et la présentation de leurs produits au grand public.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🎯 Objectifs Pédagogiques
 
-## Laravel Sponsors
+Ce projet vise à :
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- Concevoir une application web complète avec Laravel
+- Gérer plusieurs rôles et autorisations
+- Implémenter des opérations CRUD
+- Structurer une base de données relationnelle
+- Offrir une interface utilisateur claire et intuitive
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## ⚙️ Fonctionnalités Principales
 
-## Contributing
+### 🔐 Module 1 : Gestion des Utilisateurs
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- **Visiteur (non connecté) :**
+  - Voir la page d'accueil
+  - Demander un stand
+  - Se connecter
 
-## Code of Conduct
+- **Entrepreneur :**
+  - Statut "en attente" après inscription
+  - Accès limité jusqu'à validation par l’admin
+  - Tableau de bord avec gestion de ses produits
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- **Administrateur :**
+  - Approber ou refuser les demandes de stands
+  - Gestion des comptes et supervision générale
 
-## Security Vulnerabilities
+### 🏪 Module 2 : Gestion des Stands
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- Admin peut voir toutes les demandes
+- Accepter ou refuser une demande avec justification
 
-## License
+### 🛍️ Module 3 : Gestion des Produits
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- Ajout, modification, suppression de produits
+- Image, description, prix, etc.
+
+### 🌐 Module 4 : Vitrine & Commandes
+
+- Liste des stands approuvés
+- Page publique pour chaque stand
+- Ajout au panier et commande simple
+
+---
+
+## 🗃️ Modèle de Données
+
+- **Utilisateurs** (`id`, `nom_entreprise`, `email`, `mot_de_passe`, `role`, ...)
+- **Stands** (`id`, `nom_stand`, `description`, `utilisateur_id`)
+- **Produits** (`id`, `nom`, `description`, `prix`, `image_url`, `stand_id`)
+- **Commandes** (`id`, `stand_id`, `details_commande`, `date_commande`)
+
+---
+
+## 🚧 Étapes de Réalisation
+
+1. Initialisation du projet et de la base
+2. Authentification des utilisateurs
+3. Tableau de bord administrateur
+4. CRUD produits pour les entrepreneurs
+5. Pages publiques (stands et produits)
+6. Gestion des commandes
+7. Recherche de stands/produits
+8. Historique des commandes pour admin
+9. Notifications par mail
+10. Interface et messages 100% en français
+
+---
+
+## 🧰 Stack Technique
+
+- **Backend** : Laravel
+- **Frontend** : Blade + Bootstrap + JS
+- **Base de données** : MySQL ou SQLite
+- **Autres** : Laravel Breeze/Fortify pour auth (optionnel)
+
+---
+
+## ✅ Critères d'Évaluation
+
+- Collaboration Git entre les membres
+- Fonctionnalités complètes
+- Gestion correcte des rôles et permissions
+- Bonne expérience utilisateur
+- Base de données bien pensée
+
+---
+
+## 🗂️ Structure du Projet (extrait)
+
