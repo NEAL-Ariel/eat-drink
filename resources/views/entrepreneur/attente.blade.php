@@ -42,6 +42,7 @@
     </style>
 </head>
 <body>
+    @include('components.back-home-arrow')
     <div class="container mt-5 text-center">
         <div class="alert alert-info">
             <h2>Votre demande est en cours d'approbation</h2>

@@ -42,6 +42,7 @@
     </style>
 </head>
 <body>
+    @include('components.back-home-arrow')
     <div class="container mt-5">
         <h2>Bienvenue, {{ $user->nom_entreprise }}</h2>
         <p class="lead">Vous êtes connecté en tant qu'entrepreneur approuvé.</p>

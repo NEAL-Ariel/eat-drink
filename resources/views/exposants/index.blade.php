@@ -70,6 +70,7 @@
     </style>
 </head>
 <body>
+    @include('components.back-home-arrow')
     <div class="container mt-5">
         <h2 class="mb-4">Nos Exposants</h2>
         <div class="row">

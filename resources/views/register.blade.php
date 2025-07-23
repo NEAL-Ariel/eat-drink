@@ -47,6 +47,7 @@
     </style>
 </head>
 <body>
+    @include('components.back-home-arrow')
     <div class="glass-box">
         <h2 class="mb-4 text-center">Demande de stand - Inscription Entrepreneur</h2>
         @if ($errors->any())

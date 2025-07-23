@@ -70,6 +70,7 @@
     </style>
 </head>
 <body>
+    @include('components.back-home-arrow')
     <div class="container mt-5">
         <a href="{{ route('exposants.index') }}" class="btn btn-secondary mb-3">&larr; Retour à la liste des exposants</a>
         <h2>{{ $stand->nom_stand }}</h2>

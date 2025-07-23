@@ -47,6 +47,7 @@
     </style>
 </head>
 <body>
+    @include('components.back-home-arrow')
     <div class="glass-box">
         <h2 class="mb-4 text-center">Connexion</h2>
         @if ($errors->any())
