@@ -9,7 +9,7 @@
     <style>
         :root {
             --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #4facfe 100%);
             --accent-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
             --glass-bg: rgba(255, 255, 255, 0.1);
             --glass-border: rgba(255, 255, 255, 0.2);
@@ -547,15 +547,7 @@
                 <h1 class="hero-title">Bienvenue à Eat&Drink, l'événement culinaire incontournable !</h1>
                 <p class="hero-desc mx-auto">Découvrez les meilleurs talents culinaires, leurs produits artisanaux, et vivez une expérience gastronomique unique dans une atmosphère conviviale et authentique.</p>
                 <div class="d-flex flex-wrap gap-3 justify-content-center">
-                    <a href="{{ route('login') }}" class="btn btn-modern btn-outline-modern" aria-label="Se connecter à votre compte">
-                        <i class="bi bi-person-lock me-2"></i>Se connecter
-                    </a>
-                    <a href="{{ route('register') }}" class="btn btn-modern btn-primary-modern" aria-label="S'inscrire comme exposant">
-                        <i class="bi bi-shop me-2"></i>S'inscrire comme exposant
-                    </a>
-                    <a href="{{ route('exposants.index') }}" class="btn btn-modern btn-success-modern" aria-label="Découvrir tous les exposants">
-                        <i class="bi bi-eye me-2"></i>Voir les exposants
-                    </a>
+                    
                 </div>
             </div>
         </div>
@@ -657,7 +649,7 @@
                     <div class="testimonial-card animate-slide-left">
                         <p class="testimonial-quote">Une expérience incroyable, j'ai découvert des saveurs uniques et rencontré des artisans passionnés !</p>
                         <div class="testimonial-author">
-                            <strong>Sophie</strong> - Visiteuse
+                            <strong>Neal TOKPO</strong> - Visiteuse
                         </div>
                     </div>
                 </div>
@@ -665,7 +657,7 @@
                     <div class="testimonial-card animate-fade-in">
                         <p class="testimonial-quote">Grâce à Eat&Drink, mon stand a gagné en visibilité et j'ai fidélisé de nouveaux clients. Une plateforme exceptionnelle !</p>
                         <div class="testimonial-author">
-                            <strong>Karim</strong> - Artisan exposant
+                            <strong>Regis</strong> - Artisan exposant
                         </div>
                     </div>
                 </div>
@@ -673,7 +665,7 @@
                     <div class="testimonial-card animate-slide-right">
                         <p class="testimonial-quote">Organisation au top, interface simple et efficace. Je recommande vivement cet événement !</p>
                         <div class="testimonial-author">
-                            <strong>Julie</strong> - Restauratrice
+                            <strong>Herman</strong> - Restauratrice
                         </div>
                     </div>
                 </div>

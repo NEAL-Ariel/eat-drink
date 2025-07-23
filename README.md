@@ -12,8 +12,7 @@
   - Tableau de bord administrateur : approbation des entrepreneurs  
   - Implémentation des rôles et autorisations
   - CRUD des produits pour les entrepreneurs 
-  - Vitrine publique (liste des stands et produits) 
-   
+  - Vitrine publique (liste des stands et produits)  
 - **Audrey**  
   - Interface utilisateur pour le tableau de bord des entrepreneurs  
   - Formulaires et validation (ajout/modification de produit)
